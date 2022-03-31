@@ -3624,6 +3624,11 @@ char **GuiLoadIcons(const char *fileName, bool loadIconsName)
         {
             if (loadIconsName)
             {
+                /* char **foo = NULL; */
+                char *foo = NULL;
+                size_t bar = 1;
+                foo = malloc(bar);
+
                 guiIconsName = (char **)RAYGUI_MALLOC(iconCount*sizeof(char **));
                 for (int i = 0; i < iconCount; i++)
                 {
